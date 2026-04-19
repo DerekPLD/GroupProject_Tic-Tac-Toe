@@ -15,53 +15,37 @@ Reason for Choice: Agile allows incremental refinement (starting with a console 
 Possible Usage: Educational tool for beginners learning Python, pygame, and basic AI algorithms.
 
 🛠️ Software Development Plan
-Members & Roles
-
+Members & Roles:
 PUN MAN TEK (p2405788): Core game logic (win conditions, AI),Pygame interface (graphics, event handling) and Document revise(Readme & comment in code).
-
 Developer B: Pygame interface (graphics, event handling).
-
 Developer C: Documentation & testing.
-
 Developer D:
 
 Schedule:
-
 Requirement Analysis – 1 day
-
 Code Writing – 1 day
-
 UI Design – 1 day
-
 Testing – 2 days
-
 Documentation & Video – 1 day
 
-Algorithm
-
+Algorithm:
 Heuristic AI: Computer checks for winning moves, blocks user moves, prioritizes center/corners, and falls back to random moves.
 
-Current Status
-
+Current Status:
 Both versions run successfully.
 
-Future Plan
-
+Future Plan:
 Add AI opponent (easy/hard modes).
-
 Enhance GUI with animations and scoring.
-
 Record match history and statistics.
 
 💻 Environment
 Programming Language: Python 3.x
 
 Libraries:
-
 pygame (for GUI version)
 
 Requirements:
-
 Minimum hardware: Any modern PC
 
 Software: Python 3.x, pygame installed
