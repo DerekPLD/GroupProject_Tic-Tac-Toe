@@ -3,12 +3,12 @@ A simple implementation of the classic Tic-Tac-Toe game in Python. This project 
 
 Two versions are provided:
 
-Console-based version: Implemented with Python standard libraries, no external dependencies.
-<img width="1011" height="1059" alt="image" src="https://github.com/user-attachments/assets/80b4684d-270f-49f1-b5ca-ea8618b99991" />
-Graphical version: Implemented with pygame, offering a GUI-based experience.
+Console-based version: Implemented with Python standard libraries, no external dependencies:
 <img width="902" height="921" alt="image" src="https://github.com/user-attachments/assets/d9f5dbe4-6032-40ef-aeb2-8832e0ab4760" />
-📸 Project Screenshot
-(Insert image of Tic-Tac-Toe board here)
+
+Graphical version: Implemented with pygame, offering a GUI-based experience:
+<img width="1011" height="1059" alt="image" src="https://github.com/user-attachments/assets/80b4684d-270f-49f1-b5ca-ea8618b99991" />
+
 
 1. Project Overview
 1.1 Purpose
