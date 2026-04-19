@@ -2,25 +2,25 @@ import random
 
 
 def drawBoard(board):
-    # 打印棋盘
+     # Print the board
 
 
-    # "board"是长度为10的列表，为了方便输入，忽略第一个元素board[0]
+    # "board" is a list of length 10. For convenience, we ignore the first element board[0].
 
 
     print('\n\n\n\n')
-    print('\t\t\t┌─┬─┬─┐')
-    print('\t\t\t│'+board[7]+' │'+board[8]+' │'+board[9]+' │')
-    print('\t\t\t├─┼─┼─┤')
-    print('\t\t\t│'+board[4]+' │'+board[5]+' │'+board[6]+' │')
-    print('\t\t\t├─┼─┼─┤')
-    print('\t\t\t│'+board[1]+' │'+board[2]+' │'+board[3]+' │')
-    print('\t\t\t└─┴─┴─┘')
+    print('\t\t\t┌───┬───┬───┐')
+    print(f'\t\t\t│ {board[7]} │ {board[8]} │ {board[9]} │   (7 8 9)')
+    print('\t\t\t├───┼───┼───┤')
+    print(f'\t\t\t│ {board[4]} │ {board[5]} │ {board[6]} │   (4 5 6)')
+    print('\t\t\t├───┼───┼───┤')
+    print(f'\t\t\t│ {board[1]} │ {board[2]} │ {board[3]} │   (1 2 3)')
+    print('\t\t\t└───┴───┴───┘')
 
 
 def inputPlayerLetter():
-    # 让玩家选择棋子
-    # 返回一个列表，第一个是玩家的棋子，第二个是电脑的
+    # Let the player choose a letter
+    # Return a list: first is the player’s letter, second is the computer’s
     letter = ''
     while not (letter == 'X' or letter == 'O'):
         print('Do you want to be X or O?')
@@ -34,7 +34,7 @@ def inputPlayerLetter():
 
 
 def whoGoesFirst():
-    # 随机产生谁先走
+    # Randomly decide who goes first
     if random.randint(0, 1) == 0:
         return 'computer'
     else:
@@ -42,20 +42,20 @@ def whoGoesFirst():
 
 
 def playAgain():
-    # 再玩一次？输入yes或y返回True
+    # Play again? Input yes or y returns True
     print('Do you want to play again? (yes or no)')
     return input().lower().startswith('y')
 
 
 def makeMove(board, letter, move):
-    #落子
+     # Place a movement
     board[move] = letter
 
 
 def isWinner(bo, le):
-    # 判断所给的棋子是否获胜
-    # 参数为棋盘上的棋子（列表）和棋子符号
-    # 以下是所有可能胜利的情况，共8种
+    # Check if the given letter has won
+    # Parameters: board list and letter symbol
+    # There are 8 possible winning combinations
     return ((bo[7] == le and bo[8] == le and bo[9] == le) or
     (bo[4] == le and bo[5] == le and bo[6] == le) or
     (bo[1] == le and bo[2] == le and bo[3] == le) or
@@ -67,7 +67,7 @@ def isWinner(bo, le):
 
 
 def getBoardCopy(board):
-    # 复制一份棋盘，供电脑落子时使用
+    # Make a copy of the board for computer move simulation
     dupeBoard = []
 
 
@@ -79,12 +79,12 @@ def getBoardCopy(board):
 
 
 def isSpaceFree(board, move):
-    # 判断这个位置是否有子，没子返回True
+    # Check if a position is free. Return True if empty
     return board[move] == ' '
 
 
 def getPlayerMove(board):
-    # 玩家落子
+    # Player movement
     move = ' '
     while move not in '1 2 3 4 5 6 7 8 9'.split() or not isSpaceFree(board, int(move)):
         print('What is your next move? (1-9)')
@@ -93,8 +93,8 @@ def getPlayerMove(board):
 
 
 def chooseRandomMoveFromList(board, movesList):
-    # 随机返回一个可以落子的坐标
-    # 如果没有所给的movesList中没有可以落子的，返回None
+    # Randomly return a move from the list if available
+    # If none are free, return None
     possibleMoves = []
     for i in movesList:
         if isSpaceFree(board, i):
@@ -108,15 +108,15 @@ def chooseRandomMoveFromList(board, movesList):
 
 
 def getComputerMove(board, computerLetter):
-    # 确定电脑的落子位置
+    # Determine computer’s movement
     if computerLetter == 'X':
         playerLetter = 'O'
     else:
         playerLetter = 'X'
 
 
-    # Tic Tac Toe AI核心算法:
-    # 首先判断电脑方能否通过一次落子直接获得游戏胜利
+    # Tic Tac Toe AI core algorithm:
+    # First, check if computer can win in one move
     for i in range(1, 10):
         copy = getBoardCopy(board)
         if isSpaceFree(copy, i):
@@ -125,7 +125,7 @@ def getComputerMove(board, computerLetter):
                 return i
 
 
-    # 判断玩家下一次落子能否获得胜利，如果能，给它堵上
+    # Block player if they could win next move
     for i in range(1, 10):
         copy = getBoardCopy(board)
         if isSpaceFree(copy, i):
@@ -134,23 +134,23 @@ def getComputerMove(board, computerLetter):
                 return i
 
 
-    # 如果角上能落子的话，在角上落子
+    # Take a corner if available
     move = chooseRandomMoveFromList(board, [1, 3, 7, 9])
     if move != None:
         return move
 
 
-    # 如果能在中心落子的话，在中心落子
+    # Take center if available
     if isSpaceFree(board, 5):
         return 5
 
 
-    # 在边上落子
+   # Take a side
     return chooseRandomMoveFromList(board, [2, 4, 6, 8])
 
 
 def isBoardFull(board):
-    # 如果棋盘满了，返回True
+    # Return True if the board is full
     for i in range(1, 10):
         if isSpaceFree(board, i):
             return False
@@ -163,7 +163,7 @@ print('Welcome to Tic Tac Toe!')
 
 
 while True:
-    # 更新棋盘
+    # Reset the board
     theBoard = [' '] * 10
     playerLetter, computerLetter = inputPlayerLetter()
     turn = whoGoesFirst()
@@ -173,7 +173,7 @@ while True:
 
     while gameIsPlaying:
         if turn == 'player':
-            # 玩家回合
+            # Player’s turn
             drawBoard(theBoard)
             move = getPlayerMove(theBoard)
             makeMove(theBoard, playerLetter, move)
@@ -193,7 +193,7 @@ while True:
 
 
         else:
-            # 电脑回合
+            # Computer’s turn
             move = getComputerMove(theBoard, computerLetter)
             makeMove(theBoard, computerLetter, move)
 
