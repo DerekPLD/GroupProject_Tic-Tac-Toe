@@ -17,8 +17,11 @@ Possible Usage: Educational tool for beginners learning Python, pygame, and basi
 🛠️ Software Development Plan
 Members & Roles:
 PUN MAN TEK (p2405788): Core game logic (win conditions, AI),Pygame interface (graphics, event handling) and Document revise(Readme & comment in code).
+
 Developer B: Pygame interface (graphics, event handling).
+
 Developer C: Documentation & testing.
+
 Developer D:
 
 Schedule:
