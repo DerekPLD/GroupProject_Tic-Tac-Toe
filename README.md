@@ -2,9 +2,9 @@
 🎯 Purpose
 This project implements the classic Tic Tac Toe game in two versions:
 
-Console-based Python version – text-driven gameplay.
+Console-based Python version – text-driven gameplay, implemented with Python standard libraries, no external dependencies:
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d9f5dbe4-6032-40ef-aeb2-8832e0ab4760" />
-Graphical pygame version – interactive GUI with mouse input.
+Graphical pygame version – interactive GUI with mouse input, implemented with pygame, offering a GUI-based experience:
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/80b4684d-270f-49f1-b5ca-ea8618b99991" />
 The project demonstrates how to apply software engineering principles to a small but complete game.
 
@@ -17,7 +17,7 @@ Possible Usage: Educational tool for beginners learning Python, pygame, and basi
 🛠️ Software Development Plan
 Members & Roles
 
-Developer A: Core game logic (win conditions, AI).
+PUN MAN TEK (p2405788): Core game logic (win conditions, AI),Pygame interface (graphics, event handling) and Documentation.
 
 Developer B: Pygame interface (graphics, event handling).
 
