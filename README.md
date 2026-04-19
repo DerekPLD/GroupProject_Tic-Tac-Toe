@@ -11,6 +11,7 @@ Graphical version: Implemented with pygame, offering a GUI-based experience:
 
 
 1. Project Overview
+
 1.1 Purpose
 This project recreates the classic Tic-Tac-Toe game with two-player local gameplay (X vs O). It supports:
 
