@@ -22,7 +22,7 @@ PUN MAN TEK (p2405788): Core game logic (win conditions, AI),Pygame interface (g
 
 Developer B: Pygame interface (graphics, event handling).
 
-Developer C: Documentation & testing.
+CHAN HIO KIN (p2405637): Writing the Readme document and game testing.
 
 Developer D:
 
