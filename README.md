@@ -24,7 +24,7 @@ Developer B: Pygame interface (graphics, event handling).
 
 CHAN HIO KIN (p2405637): Writing the Readme document and game testing.
 
-Developer D:
+LAM KEI HOI (p2405104): Record demsonstration video
 
 Schedule:
 
@@ -75,4 +75,5 @@ Open-source libraries used: pygame
 All other code developed by the project team.
 
 🎥 Demo
-Video URL (to be added): Shows how to run both versions.
+Video URL: https://youtu.be/vDHy7ErO-Zw 
+Shows how to run both versions.
