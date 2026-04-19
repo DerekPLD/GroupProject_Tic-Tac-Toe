@@ -20,7 +20,7 @@ Members & Roles:
 
 PUN MAN TEK (p2405788): Core game logic (win conditions, AI),Pygame interface (graphics, event handling) and Document revise(Readme & comment in code).
 
-Developer B: Pygame interface (graphics, event handling).
+LIN YINGYI(p2421301): Writing the Readme document and game testing.
 
 CHAN HIO KIN (p2405637): Writing the Readme document and game testing.
 
@@ -34,7 +34,7 @@ Code Writing – 1 day
 
 UI Design – 1 day
 
-Testing – 2 days
+Testing and debug – 2 days
 
 Documentation & Video – 1 day
 
