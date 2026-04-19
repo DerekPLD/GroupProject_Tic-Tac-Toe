@@ -25,13 +25,17 @@ Developer C: Documentation & testing.
 
 Developer D:
 
-Schedule
+Schedule:
 
-Week 1: Console version completed.
+Requirement Analysis – 1 day
 
-Week 2: Pygame version implemented.
+Code Writing – 1 day
 
-Week 3: Testing, debugging, and documentation.
+UI Design – 1 day
+
+Testing – 2 days
+
+Documentation & Video – 1 day
 
 Algorithm
 
@@ -43,9 +47,11 @@ Both versions run successfully.
 
 Future Plan
 
-Implement Minimax AI for unbeatable computer play.
+Add AI opponent (easy/hard modes).
 
-Add score tracking and restart options.
+Enhance GUI with animations and scoring.
+
+Record match history and statistics.
 
 💻 Environment
 Programming Language: Python 3.x
@@ -67,13 +73,3 @@ All other code developed by the project team.
 
 🎥 Demo
 Video URL (to be added): Shows how to run both versions.
-
-Duration: ~10–15 minutes.
-
-Content:
-
-How to start the console version.
-
-How to run the pygame version.
-
-Gameplay demonstration.
