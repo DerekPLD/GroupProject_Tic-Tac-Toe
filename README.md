@@ -75,5 +75,5 @@ Open-source libraries used: pygame
 All other code developed by the project team.
 
 🎥 Demo
-Video URL: https://youtu.be/vDHy7ErO-Zw 
+Video URL: https://youtu.be/XKrVVFc3gfc
 Shows how to run both versions.
