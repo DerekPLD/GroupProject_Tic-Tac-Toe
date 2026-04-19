@@ -6,6 +6,7 @@ A classic two player chess game implemented in Python, developed purely with sta
 
 ##Project Screenshot
 
+<img width="1011" height="1059" alt="image" src="https://github.com/user-attachments/assets/80b4684d-270f-49f1-b5ca-ea8618b99991" />
 
 ##1. Project Overview
 
